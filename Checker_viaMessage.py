@@ -5,7 +5,7 @@ from selenium import webdriver
 from kavenegar import *
 
 def sendMessage(link,title):
-    api = KavenegarAPI('31666C573963674A714E706E31655A786D4E4B66417776304F61787A3771334B563536515842485356446B3D')
+    api = KavenegarAPI("api key from kavenegar.com")
     response = api.sms_send( params = { 'sender' : '1000596446', 'receptor': '09146501380', 'message' :title+"\n"+link })
     print("Message Sent")
     time.sleep(10)
